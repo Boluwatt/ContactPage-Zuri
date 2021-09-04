@@ -1,62 +1,58 @@
-import contactStyles from '../styles/contactMain.module.css'
+import contactStyles from "../styles/contactMain.module.css";
 const contactTitle = () => {
-    return (
-        <div>
-            <div className={contactStyles.titlediv}>
-               Contact Us 
-            </div>
-            <div className={contactStyles.helpdiv}>
-                <p className={contactStyles.helpbigtext}>We are here to help!</p>
-                <p className={contactStyles.helpsmalltext}>
-                    Already use Slack? Sign in so we can tailor your support experience.
-                    If that’s not possible, we’d still like to hear from you.
-                </p>
-            </div>
-            <div className={contactStyles.maindiv}>
-                <div className={contactStyles.submaindiv}>
-                    <div className={contactStyles.whitediv}>
-                        <p className={contactStyles.whitebigtext}>FAQ</p>
-                        <p className={contactStyles.whitemediumtext}>
-                            For quick answers to common questions,<br/>
-                            try our FAQ first!
-                        </p>
-                        <p className={contactStyles.whitesmalltext}>Help Center</p>
-                    </div>
-                    <div className={contactStyles.rightdiv}>
-                        <p className={contactStyles.whitebigtext}>Everything Else</p>
-                        <p className={contactStyles.whitemediumtext}>
-                            Still seeking your answers? Let us help<br/>
-                            you directly
-                        </p>
-                        <p className={contactStyles.whitesmalltext}>Submit your request</p>
-                    </div>
-                </div>
-                <div className={contactStyles.subscribemaindiv}>
-                    <div className={contactStyles.subscribediv}>
-                        <div className={contactStyles.subscribesubdiv}>
-                            <p className={contactStyles.subscribetext}>
-                                Want to get be the first to know about any updates?<br/> 
-                                Suscribe to get our newsletters.
-                            </p>
-                        </div>
-                        <div className={contactStyles.subdiv}>
-                            <div>
-                                <input type="email" placeholder="Email" className={contactStyles.input}/>
-                                <p className={contactStyles.subdivtext}>
-                                    By submitting your email, I consent to Zuri Chat sending me marketing communication <br/>
-                                    via email. I may opt out at anytime. Read Zuri Chat’s   
-                                    <span className={contactStyles.subdivgreen}>Privacy Policy</span> .
-                                </p>
-                            </div>
-                            <div>
-                                <button className={contactStyles.btn}>Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div>
+      <section className={contactStyles.contact__us}>
+        <div className={contactStyles.contactus__text}>
+            <h1 className={contactStyles.contact__header}>Contact Us</h1>
         </div>
-    )
-}
 
-export default contactTitle
+        <div className={contactStyles.we__help}>
+            <h2 className={contactStyles.help__header}>We are here to help!</h2>
+            <p className={contactStyles.help__text}>
+            Already use Slack? Sign in so we can tailor your support experience.
+            If that’s not possible, we’d still like to hear from you.
+            </p>
+        </div>
+
+        <section className={contactStyles.faq__elsesubscribe}>
+            <div className={contactStyles.faq__else}>
+            <div className={contactStyles.faq}>
+                <h3 className={contactStyles.box__header}>FAQ</h3>
+                <p className={contactStyles.box__word}>
+                For quick answers to common questions, try our FAQ first!
+                </p>
+                <p className={contactStyles.box__btmword}>Help Center</p>
+            </div>
+
+            <div className={contactStyles.else}>
+                <h3 className={contactStyles.box__header}>Everything Else</h3>
+                <p className={contactStyles.box__word}>
+                Still seeking your answers? Let us help you directly
+                </p>
+                <p className={contactStyles.box__btmword}>Submit your request</p>
+            </div>
+            </div>
+
+            <div className={contactStyles.subscribe}>
+            <h2 className={contactStyles.subscribe__header}>
+                Want to get be the first to know about any updates? Suscribe to get
+                our newsletters.
+            </h2>
+            <div className={contactStyles.input__button}>
+                <input type="text" />
+                <button className={contactStyles.subscribe__btn}>Subscribe</button>
+            </div>
+            <p className={contactStyles.subscribe__bottomword}>
+                By submitting your email, I consent to Zuri Chat sending me
+                marketing communication via email. I may opt out at anytime. Read
+                Zuri Chat’s Privacy Policy .
+            </p>
+            </div>
+        </section>
+        </section>
+    </div>
+  );
+};
+
+export default contactTitle;
