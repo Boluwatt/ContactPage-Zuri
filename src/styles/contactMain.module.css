@@ -55,6 +55,7 @@
     flex-direction: column;
     justify-content: space-between;
     background: #ffffff;
+    margin-top: -35px;
   }
   .box__header {
     font-weight: 800;
