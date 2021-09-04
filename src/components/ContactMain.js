@@ -40,7 +40,7 @@ const contactTitle = () => {
                 our newsletters.
             </h2>
             <div className={contactStyles.input__button}>
-                <input type="text" />
+                <input type="text" placeholder="Email"/>
                 <button className={contactStyles.subscribe__btn}>Subscribe</button>
             </div>
             <p className={contactStyles.subscribe__bottomword}>
